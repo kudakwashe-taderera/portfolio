@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/styles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Meta Description for SEO -->
+  <meta name="description" content="Portfolio Projects of Kudakwashe Taderera - Featuring Full-Stack Development, Cybersecurity, and AI-powered applications.">
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Kudakwashe Taderera - Portfolio Projects">
+  <meta property="og:description" content="Explore projects including AI-based Career Guidance, Job Management, and University Timetable Systems.">
+  <meta property="og:image" content="static/img/hero-bg.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/projects.html">
+  <meta property="og:type" content="website">
+
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<section id="projects" class="py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h1 class="modern-heading text-center mb-5">My Projects</h1>
+    <p class="lead">A showcase of some of my best work in software development.</p>
+
+    <div class="row">
+      <!-- Career Guidance System -->
+      <div class="col-md-4">
+        <div class="card shadow-lg">
+          <img src="static/img/career-guidance.jpg" class="card-img-top" alt="Career Guidance System">
+          <div class="card-body">
+            <h5 class="card-title">Career Guidance System</h5>
+            <p class="card-text">A web-based system designed to help students explore career paths based on education and interests.</p>
+            <a href="#career-guidance" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Management System -->
+      <div class="col-md-4">
+        <div class="card shadow-lg">
+          <img src="static/img/job-management.jpg" class="card-img-top" alt="Job Management System">
+          <div class="card-body">
+            <h5 class="card-title">Job Management System</h5>
+            <p class="card-text">A role-based job tracking system built with Flask and PostgreSQL, allowing different users to manage job workflows.</p>
+            <a href="#job-management" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- University Timetable Application -->
+      <div class="col-md-4">
+        <div class="card shadow-lg">
+          <img src="static/img/timetable-app.jpg" class="card-img-top" alt="University Timetable Application">
+          <div class="card-body">
+            <h5 class="card-title">University Timetable Application</h5>
+            <p class="card-text">A scheduling tool for university students and faculty to manage class timetables efficiently.</p>
+            <a href="#timetable-app" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Details Section -->
+<section class="project-details py-5">
+  <div class="container">
+    <h2 class="modern-heading text-center mb-5">Project Details</h2>
+
+   <!-- Career Guidance System -->
+<section id="career-guidance" class="project-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Project Image -->
+      <div class="col-lg-6 text-center">
+        <img src="static/img/career-guidance.jpg" class="img-fluid rounded shadow-lg" alt="Career Guidance System Screenshot">
+      </div>
+
+      <!-- Project Details -->
+      <div class="col-lg-6">
+        <h3 class="fw-bold text-primary"><i class="fas fa-graduation-cap"></i> Career Guidance System</h3>
+        <p class="lead">
+          An AI-powered platform designed to assist students and professionals in choosing the right career path 
+          based on education, interests, and job market trends.
+        </p>
+
+        <!-- Key Highlights -->
+        <ul class="list-unstyled">
+          <li><i class="fas fa-user-graduate text-success"></i> Personalized career & university program recommendations</li>
+          <li><i class="fas fa-robot text-warning"></i> AI-driven career matching & industry insights</li>
+          <li><i class="fas fa-chart-line text-danger"></i> Real-time job market demand trends & salary projections</li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a href="https://github.com/kudakwashe-taderera/career-guidance" class="btn btn-dark btn-lg me-2" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://career-guidance-demo.com" class="btn btn-primary btn-lg" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies Used -->
+    <div class="technologies-section p-4 mt-5 rounded shadow-lg bg-white text-center" data-aos="fade-up">
+      <h4 class="fw-bold text-primary mb-4"><i class="fas fa-tools"></i> Technologies Used</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-dark"><i class="fas fa-server"></i> Flask, FastAPI (AI Integration)</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-primary"><i class="fas fa-code"></i> React, Bootstrap, JavaScript</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-success"><i class="fas fa-database"></i> PostgreSQL for Structured Data</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-warning text-dark"><i class="fas fa-brain"></i> AI Model for Career Recommendations</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-danger"><i class="fas fa-exchange-alt"></i> API Integration (Job Market Insights)</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-secondary"><i class="fas fa-cloud"></i> AWS (S3, EC2), Cloudflare Security</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step-by-Step Process -->
+    <h4 class="fw-bold mt-5 text-center">📌 How It Works – Step by Step</h4>
+    <div class="row text-center mt-4">
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-user-graduate fa-3x text-primary"></i>
+          <h5 class="fw-bold mt-3">Step 1: User Registration</h5>
+          <p>Users create an account and enter their education background.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-chart-line fa-3x text-success"></i>
+          <h5 class="fw-bold mt-3">Step 2: AI Career Matching</h5>
+          <p>System uses AI models to suggest careers based on data trends.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-briefcase fa-3x text-danger"></i>
+          <h5 class="fw-bold mt-3">Step 3: Explore Career Insights</h5>
+          <p>Users get salary data, job demand trends, and career growth paths.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Features -->
+    <h4 class="fw-bold mt-5 text-center">🔹 Key Features</h4>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul>
+          <li>🔍 Smart Career Suggestions – AI-powered recommendations.</li>
+          <li>📊 Real-time Industry Trends – Job market insights & salary projections.</li>
+          <li>🎓 Education Pathways – Best university programs based on subjects.</li>
+          <li>🗂️ User Dashboard – Save career choices and track progress.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>⚡ Fast & Secure – Uses JWT authentication for secure login.</li>
+          <li>📂 Admin Panel – Universities can manage career/course data.</li>
+          <li>🌍 Multilingual Support – Available in English, French, and Spanish.</li>
+          <li>🔗 API Integration – Connects to job boards and university databases.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- Job Management System -->
+<section id="job-management" class="project-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Project Image -->
+      <div class="col-lg-6 text-center">
+        <img src="static/img/job-management.jpg" class="img-fluid rounded shadow-lg" alt="Job Management System Screenshot">
+      </div>
+
+      <!-- Project Details -->
+      <div class="col-lg-6">
+        <h3 class="fw-bold text-primary"><i class="fas fa-tasks"></i> Job Management System</h3>
+        <p class="lead">
+          A role-based job tracking system that streamlines job workflows, enhancing team efficiency, transparency, and accountability.
+        </p>
+
+        <!-- Key Highlights -->
+        <ul class="list-unstyled">
+          <li><i class="fas fa-user-shield text-success"></i> Role-Based Access Control – Users can only access their assigned jobs.</li>
+          <li><i class="fas fa-chart-line text-warning"></i> Real-Time Job Tracking – View live job statuses and progress updates.</li>
+          <li><i class="fas fa-lock text-danger"></i> Secure Authentication – Protects sensitive job data using JWT-based login.</li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a href="https://github.com/kudakwashe-taderera/job-management" class="btn btn-dark btn-lg me-2" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://job-management-demo.com" class="btn btn-primary btn-lg" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies Used -->
+    <div class="technologies-section p-4 mt-5 rounded shadow-lg bg-white text-center" data-aos="fade-up">
+      <h4 class="fw-bold text-primary mb-4"><i class="fas fa-tools"></i> Technologies Used</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-dark"><i class="fas fa-server"></i> Flask (Python), SQLAlchemy ORM</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-primary"><i class="fas fa-code"></i> Bootstrap, JavaScript</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-success"><i class="fas fa-database"></i> PostgreSQL (Job & User Management)</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-warning text-dark"><i class="fas fa-user-lock"></i> JWT Authentication</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-danger"><i class="fas fa-chart-bar"></i> Chart.js for Job Reports</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-secondary"><i class="fas fa-cloud"></i> AWS EC2, RDS for Hosting</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step-by-Step Process -->
+    <h4 class="fw-bold mt-5 text-center">📌 How It Works – Step by Step</h4>
+    <div class="row text-center mt-4">
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-user-plus fa-3x text-primary"></i>
+          <h5 class="fw-bold mt-3">Step 1: User Registration & Role Assignment</h5>
+          <p>Admins approve new users and assign them roles (IT Tech, Designer, General User).</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-tasks fa-3x text-success"></i>
+          <h5 class="fw-bold mt-3">Step 2: Job Creation & Assignment</h5>
+          <p>Users create jobs, set deadlines, and assign them to relevant team members.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-chart-bar fa-3x text-danger"></i>
+          <h5 class="fw-bold mt-3">Step 3: Real-Time Monitoring</h5>
+          <p>Admins track job progress via graphical reports & status updates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Roles & Permissions -->
+    <h4 class="fw-bold mt-5 text-center">👥 User Roles & Permissions</h4>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul>
+          <li>🛠️ Superuser – Manages users, assigns roles, generates reports.</li>
+          <li>💻 IT Technician – Handles technical jobs, updates statuses.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>🎨 Designer – Creates and manages design-based jobs.</li>
+          <li>📂 General User – Requests jobs, tracks assigned tasks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key Features -->
+    <h4 class="fw-bold mt-5 text-center">🔹 Key Features</h4>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul>
+          <li>🗂️ Role-Based Access – Ensures secure and restricted job data visibility.</li>
+          <li>📊 Graphical Reports – Displays job stats with real-time charts.</li>
+          <li>✅ Job Status Management – Jobs can be approved, rejected, or completed.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>🔒 Secure Authentication – Uses JWT-based login system.</li>
+          <li>📅 Deadline Tracking – Ensures timely completion of tasks.</li>
+          <li>⚡ Optimized Performance – Built for speed with Flask & PostgreSQL.</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+
+    <!-- University Timetable Application -->
+<section id="timetable-app" class="project-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Project Image -->
+      <div class="col-lg-6 text-center">
+        <img src="static/img/timetable-app.jpg" class="img-fluid rounded shadow-lg" alt="University Timetable Application Screenshot">
+      </div>
+
+      <!-- Project Details -->
+      <div class="col-lg-6">
+        <h3 class="fw-bold text-primary"><i class="fas fa-calendar-alt"></i> University Timetable Application</h3>
+        <p class="lead">
+          An AI-powered scheduling system designed to automate university class timetables, prevent conflicts, and optimize resource usage.
+        </p>
+
+        <!-- Key Highlights -->
+        <ul class="list-unstyled">
+          <li><i class="fas fa-exclamation-triangle text-danger"></i> Prevents Class Conflicts – Eliminates overlapping course schedules.</li>
+          <li><i class="fas fa-calendar-check text-success"></i> Room & Resource Optimization – Ensures efficient use of university facilities.</li>
+          <li><i class="fas fa-file-pdf text-primary"></i> Printable Timetables – Generate PDF schedules for students and faculty.</li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="mt-4">
+          <a href="https://github.com/kudakwashe-taderera/timetable-app" class="btn btn-dark btn-lg me-2" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="https://timetable-app-demo.com" class="btn btn-primary btn-lg" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies Used -->
+    <div class="technologies-section p-4 mt-5 rounded shadow-lg bg-white text-center" data-aos="fade-up">
+      <h4 class="fw-bold text-primary mb-4"><i class="fas fa-tools"></i> Technologies Used</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-dark"><i class="fas fa-server"></i> Flask (Python), SQLAlchemy ORM</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-primary"><i class="fas fa-code"></i> Bootstrap, JavaScript</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-success"><i class="fas fa-database"></i> PostgreSQL (Course & Timetable Storage)</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-warning text-dark"><i class="fas fa-brain"></i> AI-Based Conflict Detection</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-danger"><i class="fas fa-file-pdf"></i> PDF Export for Printable Timetables</div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="tech-badge bg-secondary"><i class="fas fa-cloud"></i> AWS EC2, Firebase Authentication</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step-by-Step Process -->
+    <h4 class="fw-bold mt-5 text-center">📌 How It Works – Step by Step</h4>
+    <div class="row text-center mt-4">
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-plus-circle fa-3x text-primary"></i>
+          <h5 class="fw-bold mt-3">Step 1: Course & Lecturer Input</h5>
+          <p>Users enter course details, lecturer names, and time slots.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-random fa-3x text-success"></i>
+          <h5 class="fw-bold mt-3">Step 2: AI-Based Conflict Detection</h5>
+          <p>The system analyzes schedules and resolves conflicts automatically.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-box p-4 shadow-lg rounded bg-white">
+          <i class="fas fa-print fa-3x text-danger"></i>
+          <h5 class="fw-bold mt-3">Step 3: Generate Printable Timetable</h5>
+          <p>Students and faculty download their schedules as PDFs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Roles & Permissions -->
+    <h4 class="fw-bold mt-5 text-center">👥 User Roles & Permissions</h4>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul>
+          <li>📚 Students – View and download their personalized schedules.</li>
+          <li>🎓 Lecturers – Assign class time slots and request changes.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>🏫 Admins – Manage course scheduling and conflict resolution.</li>
+          <li>📅 University Staff – Optimize schedules and track resource usage.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key Features -->
+    <h4 class="fw-bold mt-5 text-center">🔹 Key Features</h4>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <ul>
+          <li>✅ AI-Based Conflict Resolution – No overlapping courses.</li>
+          <li>🖥️ Fully Responsive – Works on mobile & desktop.</li>
+          <li>📅 Optimized Room Scheduling – Prevents double bookings.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>📂 Printable PDFs – Students & lecturers can download their timetables.</li>
+          <li>🔒 Secure Authentication – Firebase login ensures safe access.</li>
+          <li>⚡ Fast & Scalable – Designed to handle large student populations.</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; <span id="year"></span> Kudakwashe Taderera. All Rights Reserved.</p>
+      <div>
+        <a href="https://github.com/kudakwashe-taderera" class="text-light me-2"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com/in/kudakwashe-taderera" class="text-light me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://twitter.com/kudash_twakkie" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // ✅ Initialize AOS (Animate On Scroll)
+      AOS.init({ duration: 1000, once: true });
+
+      // ✅ Update footer year dynamically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

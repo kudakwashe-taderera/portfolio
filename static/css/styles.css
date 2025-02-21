@@ -1,0 +1,663 @@
+/* 🌎 Global Styles */
+/* 🌎 Global Theme Variables */
+:root {
+    /* 🎨 Primary Colors */
+    --primary-color: #007bff;
+    --secondary-color: #0046a5;
+    --accent-color: #ff6a00;
+
+    /* 🌗 Neutral Colors */
+    --light-bg: #f8f9fa;
+    --dark-bg: #222;
+    --text-color: #333;
+    --text-light: #777;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* 🔥 Hover & Active States */
+    --primary-hover: #0056b3;
+    --accent-hover: #e65c00;
+    
+    /* 📏 Borders & Shadows */
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    /* 🔠 Typography */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-heading: 2.5rem;
+
+    /* 📏 Spacing */
+    --padding-base: 15px;
+    --margin-base: 15px;
+}
+
+
+/* 🖥️ Layout Management */
+/* Ensure full-height layout and responsive behavior */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* Wrapper to push footer after content */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 80px; /* Space for fixed header */
+    padding: var(--padding-base);
+}
+
+/* 📌 Footer Styles */
+/* 📌 Footer Styles */
+.footer-container {
+    width: 100%;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 15px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: var(--primary-color);
+}
+
+
+/* 🎨 Section Spacing */
+/* 🎨 Section Spacing */
+section {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+}
+
+section:nth-child(even) {
+    background-color: var(--white);
+}
+
+
+/* 🏫 Logos (Education & Work Experience) */
+/* Logos */
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Adjust Education Logo */
+.work-logo {
+    width: 80px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* 🏫 Education Section */
+.edu-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures equal height for side-by-side cards */
+    padding: 20px;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🎓 Education Logo */
+.edu-logo {
+    width: 70px; /* Ensures consistent size */
+    height: auto;
+}
+
+/* 🏫 Education Grid (Key Courses & Projects) */
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.edu-grid div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+    .edu-grid {
+        grid-template-columns: 1fr; /* Stack items in one column */
+    }
+    .edu-logo {
+        width: 50px; /* Adjust logo size for mobile */
+    }
+}
+
+/* 🌟 Technology Badges */
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Add a slight shadow and interactive effect */
+.tech-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🎨 Badge Colors */
+.tech-badge.bg-dark {
+    background-color: #343a40; 
+    color: #f8f9fa;
+}
+
+.tech-badge.bg-primary {
+    background-color: #3b82f6;
+}
+
+.tech-badge.bg-success {
+    background-color: #198754;
+}
+
+.tech-badge.bg-warning {
+    background-color: #f4c040;
+    color: #333;
+}
+
+.tech-badge.bg-danger {
+    background-color: #dc3545;
+}
+
+.tech-badge.bg-secondary {
+    background-color: #6c757d;
+}
+
+/* 🌍 Responsive Grid */
+.technologies-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+    .tech-badge {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+
+/* 🎖 Skills & Certification Badges */
+/* 🎖 Skill, Certification & Course Badges */
+.skill-badge, .cert-badge, .course-badge {
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 8px;
+    text-align: center;
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Skill Badge */
+.skill-badge {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.skill-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Certification Badge */
+.cert-badge {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+}
+
+/* Course Badge */
+.course-badge {
+    background: linear-gradient(135deg, #4caf50, #009688);
+}
+
+.cert-badge:hover, .course-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 💼 Cards & Containers */
+/* 💼 Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏫 Education Card Styling */
+.edu-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 💼 Work Experience Section */
+.work-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures equal height for both work experience cards */
+    padding: 20px;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏢 Work Logos */
+.work-logo {
+    width: 70px; /* Keeps logo size consistent */
+    height: auto;
+}
+
+/* 📊 Work Experience Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.work-grid div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: 1fr; /* Stack items in one column */
+    }
+    .work-logo {
+        width: 50px; /* Smaller logo on mobile */
+    }
+}
+
+/* 📄 Resume Overlay */
+.resume-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Show Modal when Active */
+.resume-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Resume Content Styling */
+.resume-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the PDF iframe is fully visible */
+.resume-fullscreen {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect - Changes Color */
+.close-btn:hover {
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* 🎨 Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🚀 Modern Buttons */
+.modern-btn {
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.modern-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* 📌 Hero Section */
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Hero Image Container */
+.hero-image-container {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+/* Hero Content */
+.hero-content {
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+/* Highlighted Text */
+.highlight-text {
+    background: linear-gradient(to right, var(--accent-color), #ff9000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero UIUC Section */
+.hero-uiuc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* UIUC Logo */
+.uiuc-logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+/* Hero Subtext */
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+/* 📌 Step Box */
+.step-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.step-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Step Box Icon */
+.step-box i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Step Box Heading */
+.step-box h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Step Box Description */
+.step-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+/* 🎓 Modern Heading Styling (UIUC Themed) */
+.modern-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(to right, #1c4e9b, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #1c4e9b; /* Fallback for unsupported browsers */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Animated Underline */
+.modern-heading::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(to right, #1c4e9b, #ff6a00);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    animation: underline-animation 1s infinite alternate ease-in-out;
+}
+
+/* Underline Animation */
+@keyframes underline-animation {
+    from {
+        width: 60px;
+    }
+    to {
+        width: 120px;
+    }
+}
+
+/* Skills Grid - Display items in multiple rows */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.skills-grid span {
+    background: var(--light-bg);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Achievements Grid - Display items as separate rows */
+.achievements-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.achievements-grid div {
+    background: var(--light-bg);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Technologies Grid - Ensures items wrap properly */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Style for each technology badge */
+.tech-grid span {
+    background: var(--light-bg);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    white-space: nowrap; /* Prevents text from breaking inside badge */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

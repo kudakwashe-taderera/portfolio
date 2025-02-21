@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/styles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Meta Description for SEO -->
+  <meta name="description" content="Portfolio of Kudakwashe Taderera - Showcasing expertise in Full-Stack Development, Cybersecurity, and Cloud Computing.">
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Kudakwashe Taderera - Portfolio">
+  <meta property="og:description" content="Check out my work in Full-Stack Development, Cybersecurity, and Cloud Computing.">
+  <meta property="og:image" content="static/img/hero-bg.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <!-- Header Section -->
+    <div class="text-center mb-5">
+      <h1 class="modern-heading">About Me</h1>
+      <p class="lead text-muted">
+        A technology-driven professional with a Master of Science in Technology Management from the University of Illinois Urbana-Champaign (UIUC), specializing in Information Technology and Control.
+
+Throughout my MSTM program, I have developed expertise in enterprise database management, big data infrastructure, business intelligence, and AI-driven analytics, enabling me to design and implement scalable, secure, and data-driven solutions.
+
+My experience includes full-stack development, automation, cloud-native architectures, and strategic technology management, allowing me to bridge business and technology to drive innovation and efficiency.
+
+Additionally, I have gained strong leadership, project management, and problem-solving skills, particularly in agile development, IT security governance, and digital transformation strategies.
+
+Passionate about leveraging technology to enhance security, optimize operations, and drive business value, I thrive at the intersection of technology, data, and innovation to create impactful solutions for the modern digital era.
+      </p>
+     <!-- Resume Buttons Section -->
+<div class="text-center mt-4">
+  <h5 class="fw-bold">Want to learn more about my experience?</h5>
+  <p class="text-muted">View or download my resume below.</p>
+
+  <!-- Buttons -->
+  <div class="mb-3">
+    <button id="viewResumeBtn" class="btn btn-primary btn-lg rounded-pill">
+      <i class="fas fa-eye"></i> View Resume
+    </button>
+    <a href="static/docs/resume.pdf" class="btn btn-success btn-lg rounded-pill" download>
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+  </div>
+</div>
+
+<!-- Full-Screen Resume Modal (Initially Hidden) -->
+<div id="resumeOverlay" class="resume-overlay">
+  <div class="resume-content">
+    <button id="closeResumeBtn" class="close-btn">&times;</button>
+    <iframe 
+      src="static/docs/resume.pdf"
+      class="resume-fullscreen"
+      frameborder="0">
+    </iframe>
+  </div>
+</div>
+
+
+
+    <!-- Education Section -->
+<section class="mb-5" data-aos="fade-left">
+  <div class="container">
+    <h2 class="fw-bold modern-heading text-center">🎓 Education</h2>
+
+    <!-- Row for Side-by-Side Layout -->
+    <div class="row">
+      
+      <!-- UIUC Education Section -->
+      <div class="col-md-6">
+        <div class="edu-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/uiuc-logo.png" class="edu-logo me-3" alt="UIUC Logo">
+            <div>
+              <h5 class="fw-bold text-primary">Master of Science in Technology Management</h5>
+              <p class="text-muted">
+                <i class="fas fa-university"></i> University of Illinois Urbana-Champaign (2024 - 2025)  
+                <strong>GPA: 4.00/4.00</strong>
+              </p>
+            </div>
+          </div>
+
+          <!-- Key Areas of Study -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-book text-primary"></i> Key Courses, Technologies & Skills</h6>
+          <div class="edu-grid">
+            <div><i class="fas fa-database text-primary"></i> Enterprise Database Management (PostgreSQL, MySQL, NoSQL, Data Warehousing)</div>
+            <div><i class="fas fa-cogs text-success"></i> Technology Strategy & Digital Transformation (Business-IT Alignment, Emerging Tech)</div>
+            <div><i class="fas fa-chart-bar text-info"></i> Big Data Infrastructure (Hadoop, Apache Spark, Data Lakes, Cloud Pipelines)</div>
+            <div><i class="fas fa-user-shield text-danger"></i> Cybersecurity & Risk Management (Threat Modeling, SOC Operations, Incident Response)</div>
+            <div><i class="fas fa-laptop-code text-warning"></i> Software & Systems Development (Flask, Django, Java, REST APIs, Microservices)</div>
+            <div><i class="fas fa-lightbulb text-primary"></i> Analytics for Management Decision Making (Business Intelligence, Data-Driven Strategy)</div>
+            <div><i class="fas fa-tasks text-secondary"></i> Project & Operations Management (Agile, Scrum, Lean Six Sigma, Process Automation)</div>
+            <div><i class="fas fa-users text-success"></i> Leadership & Organizational Change (Team Building, Change Management, Business Negotiation)</div>
+            <div><i class="fas fa-rocket text-warning"></i> New Product Development & Innovation (Digital Product Lifecycle, Prototyping)</div>
+            <div><i class="fas fa-bullhorn text-danger"></i> Marketing & Competitive Strategy (Branding, Consumer Insights, Market Analytics)</div>
+            <div><i class="fas fa-industry text-info"></i> Supply Chain & Operations Analytics (Process Optimization, Data-Driven Logistics)</div>
+            <div><i class="fas fa-calculator text-dark"></i> Financial Decision Making & Accounting (Budgeting, Financial Analysis, Cost Structures)</div>
+          </div>
+
+          <!-- Key Projects -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-project-diagram text-dark"></i> Key Projects & Research</h6>
+          <div class="edu-grid">
+            <div><i class="fas fa-database text-primary"></i> Enterprise Data Strategy - PostgreSQL-based BI System</div>
+            <div><i class="fas fa-lock text-danger"></i> Cybersecurity Risk Assessment - SOC Analysis, Penetration Testing</div>
+            <div><i class="fas fa-chart-line text-success"></i> AI-Based Business Decision System - Predictive Analytics</div>
+            <div><i class="fas fa-cloud text-warning"></i> Cloud-Based Microservices App - AWS, Docker, Kubernetes</div>
+            <div><i class="fas fa-users text-secondary"></i> Leadership Case Study - Digital Transformation Strategies</div>
+            <div><i class="fas fa-industry text-info"></i> Supply Chain Analytics Dashboard - Power BI, SQL Optimization</div>
+            <div><i class="fas fa-globe text-primary"></i> Market Intelligence Platform - Business Intelligence System</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MSU Education Section -->
+      <div class="col-md-6">
+        <div class="edu-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/msu-logo.png" class="edu-logo me-3" alt="MSU Logo">
+            <div>
+              <h5 class="fw-bold text-primary">Bachelor of Science in Management Information Systems</h5>
+              <p class="text-muted">
+                <i class="fas fa-university"></i> Midlands State University (2018 - 2021)  
+                <strong>CGPA: 3.99/4.00</strong>
+              </p>
+              <p class="fw-bold text-success">
+                🏆 Achieved <strong>36 Distinctions</strong> across all courses.
+              </p>
+            </div>
+          </div>
+
+          <!-- Key Areas of Study -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-book text-primary"></i> Key Courses & Technologies</h6>
+          <div class="edu-grid">
+            <div><i class="fas fa-database text-primary"></i> Database Management Systems (SQL, PL/SQL, Stored Procedures, ERD Modeling)</div>
+            <div><i class="fas fa-code text-success"></i> Software Engineering (Java, C++, UML, OOP, MVC Architecture)</div>
+            <div><i class="fas fa-globe text-warning"></i> Web & Mobile Development (HTML, CSS, JavaScript, Bootstrap, PHP, Android)</div>
+            <div><i class="fas fa-user-shield text-danger"></i> Cybersecurity & Ethical Hacking (Penetration Testing, Secure Development)</div>
+            <div><i class="fas fa-chart-bar text-info"></i> Data Analytics & Business Intelligence (Power BI, SQL Analytics, Python Pandas)</div>
+            <div><i class="fas fa-tasks text-secondary"></i> Project Management (Agile, Scrum, SDLC, ITIL Framework)</div>
+            <div><i class="fas fa-cloud text-primary"></i> Cloud & DevOps (AWS EC2, Firebase, Version Control - Git, GitHub)</div>
+            <div><i class="fas fa-industry text-success"></i> Enterprise Systems & ERP (SAP, CRM, Business Process Automation)</div>
+            <div><i class="fas fa-cogs text-dark"></i> Operations & Supply Chain Management (Workflow Optimization, Data-Driven Decisions)</div>
+            <div><i class="fas fa-network-wired text-danger"></i> Network Administration (Cisco Routing & Switching, VPNs, Firewalls)</div>
+            <div><i class="fas fa-server text-warning"></i> Distributed Systems & Cloud Computing (Microservices, API Gateways, Kubernetes)</div>
+            <div><i class="fas fa-laptop-code text-info"></i> Artificial Intelligence & Machine Learning (Neural Networks, TensorFlow, NLP)</div>
+            <div><i class="fas fa-bullhorn text-secondary"></i> Digital Marketing & SEO (Google Analytics, Social Media Strategy)</div>
+            <div><i class="fas fa-calculator text-primary"></i> Financial Information Systems (Accounting Software, Data-Driven Financial Analysis)</div>
+            <div><i class="fas fa-lightbulb text-success"></i> Innovation & Technology Strategy (Emerging Tech, IT Business Alignment)</div>
+          </div>
+
+
+          <!-- Key Projects -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-project-diagram text-dark"></i> Key Projects & Research</h6>
+          <div class="edu-grid">
+            <div><i class="fas fa-server text-primary"></i> Database Comparison System - Java, SQL</div>
+            <div><i class="fas fa-lock text-danger"></i> Cybersecurity Audit - University Network Security</div>
+            <div><i class="fas fa-laptop-code text-success"></i> Web Scraper - IT Job Trends Analysis</div>
+            <div><i class="fas fa-globe text-warning"></i> Student Management System - Online Academic Records</div>
+            <div><i class="fas fa-mobile text-primary"></i> Inventory Management App - Android</div>
+            <div><i class="fas fa-database text-info"></i> BI Dashboard - Power BI for Student Metrics</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End of Row -->
+  </div>
+</section>
+
+
+    <!-- Work Experience Section -->
+<section class="mb-5" data-aos="fade-left">
+  <div class="container">
+    <h2 class="fw-bold modern-heading text-center">💼 Work Experience</h2>
+
+    <!-- Row for Side-by-Side Layout -->
+    <div class="row">
+      
+      <!-- Nashua Zimbabwe -->
+      <div class="col-md-6">
+        <div class="work-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/nashua-logo.jpg" class="work-logo me-3" alt="Nashua Zimbabwe Logo">
+            <div>
+              <h5 class="fw-bold text-primary">ICT Support & Automation Specialist</h5>
+              <p class="text-muted"><i class="fas fa-calendar-alt"></i> Nashua Zimbabwe | Oct 2022 - Mar 2024</p>
+            </div>
+          </div>
+
+          <!-- Key Responsibilities -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-tasks text-success"></i> Key Responsibilities</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-microchip text-primary"></i> Designed automation tools, reducing manual IT workloads by 30%.</div>
+            <div><i class="fas fa-shield-alt text-danger"></i> Strengthened network security, reducing system downtime by 23%.</div>
+            <div><i class="fas fa-users text-info"></i> Provided enterprise-level IT support for 500+ users.</div>
+            <div><i class="fas fa-database text-warning"></i> Optimized SQL databases for improved performance.</div>
+            <div><i class="fas fa-lock text-dark"></i> Configured firewalls, VPNs, and cloud security for data protection.</div>
+            <div><i class="fas fa-rocket text-success"></i> Led successful software deployments with a 100% rollout success rate.</div>
+          </div>
+
+          <!-- Technologies Used -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-tools text-secondary"></i> Technologies & Tools Used</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-code text-primary"></i> Python, Power Automate, Bash Scripting</div>
+            <div><i class="fas fa-network-wired text-danger"></i> Cisco Firewalls, Fortinet VPNs</div>
+            <div><i class="fas fa-database text-warning"></i> SQL Server, PostgreSQL</div>
+            <div><i class="fas fa-cloud text-success"></i> AWS IAM, Azure AD</div>
+            <div><i class="fas fa-desktop text-info"></i> Windows Server, Active Directory, Office 365</div>
+          </div>
+
+          <!-- Key Achievements -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-trophy text-warning"></i> Key Achievements</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-check-circle text-success"></i> Reduced IT ticket resolution time by 40%.</div>
+            <div><i class="fas fa-chart-bar text-info"></i> Developed automated reports, saving 200+ hours per year.</div>
+            <div><i class="fas fa-star text-primary"></i> Achieved a 98% user satisfaction rating from feedback surveys.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paragon Express -->
+      <div class="col-md-6">
+        <div class="work-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/paragon-logo.jpg" class="work-logo me-3" alt="Paragon Express Logo">
+            <div>
+              <h5 class="fw-bold text-primary">IT Security & System Analyst</h5>
+              <p class="text-muted"><i class="fas fa-calendar-alt"></i> Paragon Express | Mar 2024 - Jul 2024</p>
+            </div>
+          </div>
+
+          <!-- Key Responsibilities -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-user-secret text-danger"></i> Key Responsibilities</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-lock text-danger"></i> Automated security protocols, reducing cyber threats by 30%.</div>
+            <div><i class="fas fa-database text-warning"></i> Optimized SQL databases for enhanced security & performance.</div>
+            <div><i class="fas fa-bug text-dark"></i> Led penetration testing & vulnerability assessments.</div>
+            <div><i class="fas fa-file-alt text-primary"></i> Conducted security audits ensuring ISO 27001 compliance.</div>
+            <div><i class="fas fa-shield-virus text-success"></i> Developed risk mitigation strategies reducing IT incidents.</div>
+            <div><i class="fas fa-key text-info"></i> Integrated MFA for secure system authentication.</div>
+          </div>
+
+          <!-- Technologies Used -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-tools text-secondary"></i> Technologies & Tools Used</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-user-secret text-danger"></i> Kali Linux, Metasploit, Nessus</div>
+            <div><i class="fas fa-database text-warning"></i> SQL Injection Prevention, Data Encryption</div>
+            <div><i class="fas fa-cloud text-success"></i> AWS Security Groups, Microsoft Defender</div>
+            <div><i class="fas fa-chart-line text-info"></i> Splunk, Wireshark, SIEM Tools</div>
+          </div>
+
+          <!-- Key Achievements -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-award text-warning"></i> Key Achievements</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-shield-alt text-danger"></i> Reduced unauthorized system access attempts by 50%.</div>
+            <div><i class="fas fa-lock text-warning"></i> Maintained zero data breaches by implementing strong security policies.</div>
+            <div><i class="fas fa-bell text-info"></i> Developed an automated security alert system, cutting incident response time by 35%.</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End of Row -->
+  </div>
+</section>
+
+
+
+
+
+<!-- Experience & Leadership Section -->
+<section class="mb-5" data-aos="fade-left">
+  <div class="container">
+    <h2 class="fw-bold modern-heading text-center">🚀 Experience & Leadership</h2>
+
+    <!-- Row for Side-by-Side Layout -->
+    <div class="row">
+      
+      <!-- ICT Internship at Z.O.U -->
+      <div class="col-md-6">
+        <div class="experience-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/zou-logo.jpg" class="work-logo me-3" alt="Zimbabwe Open University Logo">
+            <div>
+              <h5 class="fw-bold text-primary">ICT Intern - IT & Systems Department</h5>
+              <p class="text-muted"><i class="fas fa-calendar-alt"></i> Zimbabwe Open University (Z.O.U) | Jan 2020 - Dec 2020</p>
+            </div>
+          </div>
+
+          <!-- Key Responsibilities -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-tasks text-success"></i> Key Responsibilities</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-headset text-primary"></i> Provided IT support for students & staff.</div>
+            <div><i class="fas fa-laptop-code text-warning"></i> Developed a Java-based system for database inconsistency detection.</div>
+            <div><i class="fas fa-database text-danger"></i> Maintained MySQL & SQL Server databases.</div>
+            <div><i class="fas fa-network-wired text-success"></i> Configured network security with routers, switches & firewalls.</div>
+            <div><i class="fas fa-hdd text-secondary"></i> Designed automated backup solutions, minimizing data loss risks.</div>
+            <div><i class="fas fa-lock text-dark"></i> Conducted IT security assessments to identify system vulnerabilities.</div>
+            <div><i class="fas fa-sync text-info"></i> Migrated student records to a modern SQL database.</div>
+          </div>
+
+          <!-- Technologies Used -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-tools text-secondary"></i> Technologies & Tools Used</h6>
+          <div class="tech-grid">
+            <span><i class="fas fa-code text-primary"></i> Java, Python, Bash Scripting</span>
+            <span><i class="fas fa-database text-danger"></i> MySQL, SQL Server</span>
+            <span><i class="fas fa-network-wired text-success"></i> Cisco Routers, Firewalls, VPNs</span>
+            <span><i class="fas fa-lock text-warning"></i> Vulnerability Scanning, Data Encryption</span>
+            <span><i class="fas fa-server text-info"></i> Active Directory, Windows Server</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SRC President at MSU -->
+      <div class="col-md-6">
+        <div class="experience-card p-4 rounded shadow-sm">
+          <div class="d-flex align-items-center mb-3">
+            <img src="static/img/msu-logo.png" class="work-logo me-3" alt="Midlands State University Logo">
+            <div>
+              <h5 class="fw-bold text-primary">Student Representative Council (SRC) President</h5>
+              <p class="text-muted"><i class="fas fa-calendar-alt"></i> Midlands State University | Jan 2020 - Dec 2020</p>
+            </div>
+          </div>
+
+          <!-- Key Responsibilities -->
+          <h6 class="fw-bold text-dark"><i class="fas fa-tasks text-success"></i> Key Responsibilities</h6>
+          <div class="work-grid">
+            <div><i class="fas fa-users text-primary"></i> Led a 15-member executive team representing 10,000+ students.</div>
+            <div><i class="fas fa-handshake text-danger"></i> Negotiated student rights & academic policies with administration.</div>
+            <div><i class="fas fa-calendar-check text-success"></i> Organized career fairs, summits & university-wide events.</div>
+            <div><i class="fas fa-money-bill-wave text-warning"></i> Managed the student budget allocation for events.</div>
+            <div><i class="fas fa-laptop text-info"></i> Advocated for digital learning improvements & new welfare policies.</div>
+          </div>
+
+          <!-- Leadership Skills -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-lightbulb text-primary"></i> Leadership Skills Developed</h6>
+          <div class="skills-grid">
+            <span><i class="fas fa-microphone text-danger"></i> Public Speaking & Negotiation</span>
+            <span><i class="fas fa-chart-line text-success"></i> Strategic Decision-Making</span>
+            <span><i class="fas fa-users-cog text-warning"></i> Team Leadership & Conflict Resolution</span>
+            <span><i class="fas fa-landmark text-info"></i> Policy Advocacy & Governance</span>
+            <span><i class="fas fa-calculator text-secondary"></i> Budget & Financial Management</span>
+          </div>
+
+          <!-- Key Achievements -->
+          <h6 class="fw-bold mt-3"><i class="fas fa-trophy text-warning"></i> Key Achievements</h6>
+          <div class="achievements-grid">
+            <div><i class="fas fa-balance-scale text-primary"></i> Negotiated a 50% reduction in fees for financially disadvantaged students.</div>
+            <div><i class="fas fa-laptop text-danger"></i> Introduced a Digital Student Support System, reducing resolution time by 40%.</div>
+            <div><i class="fas fa-chart-bar text-success"></i> Increased student participation in extracurricular activities by 30%.</div>
+            <div><i class="fas fa-bullhorn text-warning"></i> Secured funding for student innovation competitions.</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End of Row -->
+  </div>
+</section>
+
+
+
+
+
+<!-- Skills & Certifications Section -->
+<div class="skills-section py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fw-bold modern-heading">Skills & Certifications</h2>
+    
+    <!-- Technical Skills -->
+    <h4 class="text-primary fw-bold mt-4"><i class="fas fa-code"></i> Technical Skills</h4>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3"><span class="skill-badge"><i class="fab fa-python"></i> Python & Flask</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fab fa-java"></i> Java & System Architecture</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-database"></i> SQL & PostgreSQL</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-cloud"></i> AWS & Cloud Computing</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-server"></i> Big Data (Hadoop, Spark)</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-shield-alt"></i> Cybersecurity & Ethical Hacking</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-network-wired"></i> REST APIs & Microservices</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-brain"></i> Machine Learning & AI</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-laptop-code"></i> Full-Stack Development</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-chart-bar"></i> Data Visualization (Power BI, Tableau)</span></div>
+    </div>
+
+    <!-- Business & Strategy Skills -->
+    <h4 class="text-success fw-bold mt-5"><i class="fas fa-chart-line"></i> Business & Strategy Skills</h4>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-tasks"></i> Project Management (Agile, Scrum)</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-lightbulb"></i> Technology Strategy</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-cogs"></i> Operations Management</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-calculator"></i> Financial Analysis & Budgeting</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-bullhorn"></i> Marketing & SEO</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-truck"></i> Supply Chain Optimization</span></div>
+    </div>
+
+    <!-- Leadership & Communication Skills -->
+    <h4 class="text-danger fw-bold mt-5"><i class="fas fa-user-tie"></i> Leadership & Communication</h4>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-bullseye"></i> Strategic Leadership</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-handshake"></i> Business Negotiation</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-globe"></i> Cross-Cultural Communication</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-users"></i> Team Building & Conflict Resolution</span></div>
+      <div class="col-md-3"><span class="skill-badge"><i class="fas fa-microphone"></i> Corporate Storytelling</span></div>
+    </div>
+
+    <!-- Certifications Section -->
+    <h4 class="text-info fw-bold mt-5"><i class="fas fa-certificate"></i> Professional Certifications</h4>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3"><span class="cert-badge"><i class="fas fa-shield-alt"></i> (ISC)² Certified in Cybersecurity (CC) - In Progress</span></div>
+      <div class="col-md-3"><span class="cert-badge"><i class="fab fa-aws"></i> AWS Certified Developer - Associate - In Progress</span></div>
+      <div class="col-md-3"><span class="cert-badge"><i class="fas fa-user-secret"></i> CISA (Certified Information Systems Auditor) - Future Goal</span></div>
+    </div>
+
+    <!-- DataCamp & LinkedIn Learning Courses -->
+    <h4 class="text-warning fw-bold mt-5"><i class="fas fa-laptop"></i> Online Courses & Specializations</h4>
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3"><span class="course-badge"><i class="fas fa-database"></i> Data Science & SQL - DataCamp</span></div>
+      <div class="col-md-3"><span class="course-badge"><i class="fas fa-brain"></i> AI & Machine Learning - LinkedIn Learning</span></div>
+      <div class="col-md-3"><span class="course-badge"><i class="fas fa-lock"></i> Cybersecurity Fundamentals - DataCamp</span></div>
+      <div class="col-md-3"><span class="course-badge"><i class="fas fa-chart-bar"></i> Power BI & Data Visualization - LinkedIn</span></div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; <span id="year"></span> Kudakwashe Taderera. All Rights Reserved.</p>
+      <div>
+        <a href="https://github.com/kudakwashe-taderera" class="text-light me-2"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com/in/kudakwashe-taderera" class="text-light me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://twitter.com/kudash_twakkie" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // ✅ Initialize AOS (Animate On Scroll)
+      AOS.init({ duration: 1000, once: true });
+
+      // ✅ Update footer year dynamically
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ✅ Resume Modal Handling
+      const viewResumeBtn = document.getElementById("viewResumeBtn");
+      const closeResumeBtn = document.getElementById("closeResumeBtn");
+      const resumeOverlay = document.getElementById("resumeOverlay");
+      const resumeIframe = document.getElementById("resumeIframe"); // Resume iframe
+      const body = document.body;
+
+      if (viewResumeBtn && resumeOverlay) {
+        viewResumeBtn.addEventListener("click", function () {
+          resumeOverlay.classList.add("show"); // Show the modal
+          resumeIframe.src = "static/docs/resume.pdf"; // Load resume file dynamically
+          body.classList.add("no-scroll"); // Prevent background scrolling
+        });
+
+        if (closeResumeBtn) {
+          closeResumeBtn.addEventListener("click", function () {
+            resumeOverlay.classList.remove("show");
+            body.classList.remove("no-scroll"); // Restore scrolling
+            resumeIframe.src = ""; // Stop loading resume when closing
+          });
+        }
+
+        // ✅ Close modal when clicking outside the resume box
+        resumeOverlay.addEventListener("click", function (event) {
+          if (event.target === resumeOverlay) {
+            resumeOverlay.classList.remove("show");
+            body.classList.remove("no-scroll"); // Restore scrolling
+            resumeIframe.src = ""; // Clear resume file when closing
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
